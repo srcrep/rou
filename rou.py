@@ -123,7 +123,7 @@ class RouletteBot:
                 print(str(counter) + " : " + line[0:line.index(":")])
                 list_machines.append(line[line.index(":")+1:])
                 counter += 1
-            index_machine = int(input("What machine are you on? Type the number of the machine then 'ENTER' :")) - 1
+            index_machine = int(input("Interface : ")) - 1
 
             src = list_machines[index_machine]
             settingfile = open(src, "r")
